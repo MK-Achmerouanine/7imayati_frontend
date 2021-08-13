@@ -130,12 +130,14 @@ const Map = () => {
     <>
       <Container fluid>
         <Row className="my-3">
-          <Col lg={4}>
-            <img src={pin} alt="PIN" align="middle" />
+          <Col lg={2} className="my-5 my-md-3 my-lg-0">
+            <div className="my-3">
+              <img src={pin} alt="PIN" align="middle" width="40%" />
 
-            <img src={rabat} alt="Rabat" />
+              <img src={rabat} alt="Rabat" width="60%" />
+            </div>
           </Col>
-          <Col lg={4} className="d-flex flex-row align-self-stretch">
+          <Col lg={6} className="d-flex flex-row align-self-stretch my-5 my-lg-0">
             <div className="iconthemebluebackground">
               <img
                 src={placeholderSearchIco[searchby]}
@@ -159,7 +161,7 @@ const Map = () => {
               <option value="H">Taux de l'humidité</option>
             </select>
           </Col>
-          <Col>
+          <Col className="h-100 my-auto">
             <p className="control has-icons-left has-icons-right mb-1">
               <input
                 id="inputBox-by"
@@ -194,7 +196,7 @@ const Map = () => {
               </span>
             </p>
           </Col>
-          <Col>
+          <Col className="h-100 my-auto">
             <Button
               variant="primary"
               className="btn-block text-white"
@@ -207,7 +209,7 @@ const Map = () => {
         </Row>
 
         <Row>
-          <Col lg={10} sm={12} className="mx-auto p-5">
+          <Col lg={10} sm={12} className="mx-auto">
             <MapContainer
               center={[33.969199, -6.927303]}
               zoom={12}
