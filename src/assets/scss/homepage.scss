@@ -1,0 +1,169 @@
+.hero-container {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: #0999fd;
+  object-fit: contain;
+  background: linear-gradient(180deg, #ffffff 0%, rgba(255, 255, 255, 0) 100%);
+  opacity: 0.9;
+  background: url("../img/transparent-logo-background.png") no-repeat center
+    center;
+  -webkit-background-size: contain;
+  -moz-background-size: contain;
+  -ms-background-size: contain;
+  -o-background-size: contain;
+  background-size: contain;
+}
+.herox > h3,
+.hero-container > h3 {
+  font-weight: 600;
+  font-size: 54px;
+  /* or 140% */
+
+  color: #0a7dcd;
+}
+.herox > p,
+.hero-container > p {
+  font-size: 18px;
+  /* or 140% */
+  text-align: justify;
+
+  color: #0578c8;
+}
+.sec {
+  position: absolute;
+  width: 600x;
+  height: 615px;
+  left: 21.95px;
+  top: 134.95px;
+}
+.map {
+  position: absolute;
+  width: 945px;
+  height: 566px;
+  left: 350px;
+  top: 90px;
+}
+.hero-btn {
+  width: 183px;
+  height: 63px;
+  color: #ffffff;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 30px;
+}
+.hero-btn:hover {
+  width: 183px;
+  height: 63px;
+  color: #ffffff;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 30px;
+}
+@media screen and (max-width: 768px) {
+  .hero-container > h3 {
+    font-weight: 600;
+    font-size: 35px;
+    /* or 140% */
+
+    color: #0a7dcd;
+  }
+  .hero-container > p {
+    font-size: 10.85px;
+    color: #0578c8;
+  }
+  .map {
+    margin-top: 250px;
+    top: 60px;
+    margin-left: -60px;
+    width: 400px;
+    height: 200px;
+    left: 0px;
+  }
+  .sec {
+    margin-top: -40px;
+    width: 300px;
+    height: 300px;
+    left: 0px;
+  }
+}
+
+/** HEROX **/
+
+.herox {
+  height: 100vh;
+  width: 100%;
+  padding: 22rem 3rem;
+  background: url("../img/transparent-logo-background.png") no-repeat center
+    center;
+  -webkit-background-size: contain;
+  -moz-background-size: contain;
+  -ms-background-size: contain;
+  -o-background-size: contain;
+  background-size: contain;
+  h3 {
+    font-weight: 600;
+    font-size: 5vw;
+    /* or 140% */
+    color: #0a7dcd;
+  }
+  p {
+    font-size: 10.85px;
+    /* or 140% */
+    text-align: justify;
+
+    color: #0578c8;
+  }
+}
+@media screen and (min-width: 768px) {
+  .herox {
+    height: 100vh;
+    width: 100%;
+    padding: 22rem 3rem;
+    background: url("../img/transparent-logo-background.png") no-repeat center
+      center;
+    -webkit-background-size: contain;
+    -moz-background-size: contain;
+    -ms-background-size: contain;
+    -o-background-size: contain;
+    background-size: contain;
+    h3 {
+      font-weight: 600;
+      font-size: 3vw;
+      /* or 140% */
+      margin-top: 22rem;
+      color: #0a7dcd;
+    }
+    p {
+      font-size: 18px;
+      /* or 140% */
+      text-align: justify;
+
+      color: #0578c8;
+    }
+  }
+  .map-img {
+    margin: 22rem auto;
+  }
+}
+
+/** À propos **/
+.card-title {
+  font-size: 2rem;
+  font-weight: 700;
+}
+hr.propos {
+  width: 3rem;
+  background-color: white;
+  border: 2px solid white;
+  margin: 1rem auto;
+  margin-left: 0;
+  opacity: 1;
+}
+
+

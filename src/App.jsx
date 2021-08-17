@@ -8,6 +8,7 @@ import {
 import Navbar from "./components/header/Navbar";
 import About from "./pages/About";
 import Browse from "./pages/Browse";
+import Data from "./pages/Data";
 import FAQ from "./pages/FAQ";
 import { Home, Login, Register, NotFoundPage } from "./pages/index";
 import Map from "./pages/Map";
@@ -22,6 +23,7 @@ const App = () => {
         <Router>
           <Switch>
             <Route exact path="/" component={Home} />
+            <Route exact path="/data" component={Data} />
             <Route exact path="/login" component={Login} />
             <Route exact path="/register" component={Register} />
             <Route exact path="/404" component={NotFoundPage} />

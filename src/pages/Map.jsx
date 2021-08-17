@@ -130,14 +130,14 @@ const Map = () => {
     <>
       <Container fluid>
         <Row className="my-3">
-          <Col lg={2} className="my-5 my-md-3 my-lg-0">
-            <div className="my-3">
+          <Col lg={2} className="my-3 my-md-3 my-lg-0">
               <img src={pin} alt="PIN" align="middle" width="40%" />
 
               <img src={rabat} alt="Rabat" width="60%" />
-            </div>
+            
           </Col>
-          <Col lg={6} className="d-flex flex-row align-self-stretch my-5 my-lg-0">
+          <Col lg={1} ></Col>
+          <Col lg={5} className="d-inline-flex my-5 my-lg-0">
             <div className="iconthemebluebackground">
               <img
                 src={placeholderSearchIco[searchby]}
@@ -146,7 +146,7 @@ const Map = () => {
               />
             </div>
             <select
-              className="form-select"
+              className="form-select select"
               value={searchby}
               onChange={(e) => {
                 const searchby = e.target.value;
@@ -161,7 +161,7 @@ const Map = () => {
               <option value="H">Taux de l'humidité</option>
             </select>
           </Col>
-          <Col className="h-100 my-auto">
+          <Col lg={2} className="h-100 my-auto">
             <p className="control has-icons-left has-icons-right mb-1">
               <input
                 id="inputBox-by"
@@ -196,7 +196,7 @@ const Map = () => {
               </span>
             </p>
           </Col>
-          <Col className="h-100 my-auto">
+          <Col lg={2} className="h-100 my-auto d-grid gap-2 d-md-block">
             <Button
               variant="primary"
               className="btn-block text-white"
